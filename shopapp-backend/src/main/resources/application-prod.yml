@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  devtools:
+    add-properties: true
+
+# application-prod.yml
+jwt:
+  secretKey: prod@123

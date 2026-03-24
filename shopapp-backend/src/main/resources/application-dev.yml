@@ -1,0 +1,34 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  devtools:
+    add-properties: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/ShopApp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  sendgrid:
+    api-key: SG.
+    from-email: hoangbv.dev@gmail.com
+
+# application-dev.yml
+jwt:
+  expiration: 2592000                   #30 days = 30 * 24 * 60 * 60
+  expiration-refresh-token: 5184000     #60 days = 60 * 24 * 60 * 60
+  secretKey: TaqlmGv1iEDMRiFp/pHuID1+T84IABfuA0xXh4GhiUI=
+
+aws:
+  s3:
+    bucket: s
+    region: s
+    access: s
+    secret: s
+
+vnpay:
+  pay-url: "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html"
+  return-url: "http://localhost:4200/payments/payment-callback"
+  tmn-code: "JRCZKGXA"
+  secret-key: "ILT6QKSLORNGWAIK7HOJ1PM24B3BEM0Q"
+  api-url: "https://sandbox.vnpayment.vn/merchant_webapi/api/transaction"

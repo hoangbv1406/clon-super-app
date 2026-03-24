@@ -1,0 +1,66 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shopapp-frontend/auth": ["libs/core/auth/src/index.ts"],
+      "@shopapp-frontend/http": ["libs/core/http/src/index.ts"],
+      "@shopapp-frontend/ui-kit": ["libs/shared/ui-kit/src/index.ts"],
+      "@shopapp-frontend/catalog-data-access": [
+        "libs/domains/catalog/data-access/src/index.ts"
+      ],
+      "@shopapp-frontend/catalog-feature-list": [
+        "libs/domains/catalog/feature-list/src/index.ts"
+      ],
+      "@shopapp-frontend/cart-data-access": [
+        "libs/domains/cart/data-access/src/index.ts"
+      ],
+      "@shopapp-frontend/cart-feature-cart": [
+        "libs/domains/cart/feature-cart/src/index.ts"
+      ],
+      "@shopapp-frontend/checkout-data-access": [
+        "libs/domains/checkout/data-access/src/index.ts"
+      ],
+      "@shopapp-frontend/checkout-feature-booking": [
+        "libs/domains/checkout/feature-booking/src/index.ts"
+      ],
+      "@shopapp-frontend/account-data-access": [
+        "libs/domains/account/data-access/src/index.ts"
+      ],
+      "@shopapp-frontend/account-feature-profile": [
+        "libs/domains/account/feature-profile/src/index.ts"
+      ],
+      "@shopapp-frontend/social-hub-data-access": [
+        "libs/domains/social-hub/data-access/src/index.ts"
+      ],
+      "@shopapp-frontend/social-hub-feature-interaction": [
+        "libs/domains/social-hub/feature-interaction/src/index.ts"
+      ],
+      "@shopapp-frontend/store-management-data-access": [
+        "libs/domains/store-management/data-access/src/index.ts"
+      ],
+      "@shopapp-frontend/store-management-feature-dashboard": [
+        "libs/domains/store-management/feature-dashboard/src/index.ts"
+      ],
+      "@shopapp-frontend/pos-desk-data-access": [
+        "libs/domains/pos-desk/data-access/src/index.ts"
+      ],
+      "@shopapp-frontend/pos-desk-feature-cashier": [
+        "libs/domains/pos-desk/feature-cashier/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
